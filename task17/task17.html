@@ -1,0 +1,32 @@
+<html>
+<head>
+
+</head>
+<body style="background:darkblue;color:white">
+<h1>Removing duplicates from the array</h1>
+<h1>Click the button to remove the duplicates</h1>
+<button type="button" onclick="myfunction()">click</button>
+<p id="demo">
+
+</p>
+</body>
+
+<script>
+var i;
+var a = [1,2,3,1,2,8];
+document.getElementById("demo").innerHTML = a;
+
+var b =[];
+
+function myfunction(){
+for(i =0; i< a.length; i++){
+
+if(b.indexOf(a[i]) === -1){
+ b.push(a[i]);
+}
+}
+
+document.getElementById("demo").innerHTML = b;
+}
+</script>
+</html>
